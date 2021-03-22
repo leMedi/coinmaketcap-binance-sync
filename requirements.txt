@@ -1,0 +1,4 @@
+pipenv==2020.11.15
+python-binance==0.7.9
+python-dotenv==0.15.0
+requests==2.25.1
