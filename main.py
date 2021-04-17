@@ -12,11 +12,16 @@ BINANCE_API_KEY = os.getenv("BINANCE_API_KEY")
 BINANCE_SECRET_KEY = os.getenv("BINANCE_SECRET_KEY")
 COINMARKETCAP_AUTH_KEY = os.getenv("COINMARKETCAP_AUTH_KEY")
 
-SYMBOLS = ['XLM', 'SXP', 'ENJ', 'LTC', 'BTC', 'HOT', 'CHR', 'MATIC', 'COTI', 'ADA', 'BAT', 'UNI', 'BNB', 'AVAX', 'LINK', 'STMX']
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
+COINS_JSON_NAME = 'coins.json'
+ORDERS_JSON_NAME = 'synced_orders.json'
 
-COINS_JSON_PATH = 'coins.json'
-ORDERS_JSON_PATH = 'synced_orders.json'
+COINS_JSON_PATH = os.path.join(dir_path, COINS_JSON_NAME)
+ORDERS_JSON_PATH = os.path.join(dir_path, ORDERS_JSON_NAME)
+
+print('COINS_JSON_PATH', COINS_JSON_PATH)
+print('ORDERS_JSON_PATH', ORDERS_JSON_PATH)
 
 coins = None
 proccessed_orders = list()
