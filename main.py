@@ -12,6 +12,8 @@ BINANCE_API_KEY = os.getenv("BINANCE_API_KEY")
 BINANCE_SECRET_KEY = os.getenv("BINANCE_SECRET_KEY")
 COINMARKETCAP_AUTH_KEY = os.getenv("COINMARKETCAP_AUTH_KEY")
 
+SYMBOLS = ['CHZ', 'ATOM', 'NEO', 'XMR', 'DOGE', 'OMG', 'MTL', 'OXT', 'EOS', 'DOT', 'SOL', 'XLM', 'SXP', 'ENJ', 'LTC', 'BTC', 'HOT', 'CHR', 'MATIC', 'COTI', 'ADA', 'BAT', 'UNI', 'BNB', 'AVAX', 'LINK', 'STMX']
+
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
 COINS_JSON_NAME = 'coins.json'
